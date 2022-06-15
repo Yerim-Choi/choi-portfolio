@@ -36,21 +36,6 @@ body {
   opacity: 0.3;
 }
 
-/* Fixed header.
-* --------------------------------------- */
-#header {
-  top: 0px;
-  position: fixed;
-  height: 50px;
-  display: block;
-  width: 100%;
-  background: #333;
-  z-index: 9;
-  text-align: center;
-  color: #f2f2f2;
-  padding: 20px 0 0 0;
-}
-
 /* fullpage.
 * --------------------------------------- */
 #fullpage {
@@ -137,7 +122,7 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     width: 100%;
-    bottom: 40px;
+    bottom: 50px;
 
     .copyright {
       font-weight: 500;
@@ -164,6 +149,104 @@ body {
     }
   }
 }
+
+/* Intro Section.
+* --------------------------------------- */
+#fullpage .section.intro {
+  background-image: url("../img/intro_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  .header {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    color: #cecece;
+    font-weight: 700;
+  }
+
+  .page-count {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    color: #cecece;
+    font-weight: 700;
+  }
+
+  .content_wrap {
+    position: relative;
+
+    .column-wrap {
+      position: absolute;
+      top: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column {
+      .main-title {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: -7px;
+        .highlight {
+          font-size: 50px;
+        }
+
+        // 형광펜 효과
+        .line {
+          background: linear-gradient(to top, #e6e8e9 50%, transparent 50%);
+        }
+      }
+
+      .info {
+        margin-top: 130px;
+        .name {
+          font-weight: 900;
+          font-size: 25px;
+        }
+        .age {
+          font-weight: 500;
+          font-size: 16px;
+          margin-top: 10px;
+        }
+        .more {
+          font-weight: 500;
+          font-size: 16px;
+          margin-top: 90px;
+          ul li {
+            margin-top: 6px;
+          }
+        }
+      }
+
+      .column-item {
+        margin-bottom: 55px;
+        .title {
+          color: #466dfd;
+          font-size: 18px;
+          font-weight: 900;
+          margin-bottom: 25px;
+        }
+
+        .content {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 20px;
+          .date {
+            font-weight: 400;
+            margin-top: 10px;
+            color: #c6c6c6;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* ThankYou Section.
 * --------------------------------------- */
 #fullpage .section.thankyou {
