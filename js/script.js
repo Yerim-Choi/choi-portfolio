@@ -15,7 +15,7 @@ new fullpage("#fullpage", {
   //이동
   menu: "#menu",
   lockAnchors: false,
-  anchors: ["home", "intro", "experience", "project", "more", "thankyou"],
+  //   anchors: ["home", "intro", "experience", "project", "more", "thankyou"],
   navigation: true,
   navigationPosition: "right",
   //   navigationTooltips: ["firstSlide", "secondSlide"],

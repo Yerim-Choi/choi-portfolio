@@ -33,7 +33,7 @@ body {
 * --------------------------------------- */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 /* Fixed header.
@@ -158,9 +158,46 @@ body {
         }
         ul li {
           font-size: 14px;
-          margin-bottom: 5px;
+          margin-bottom: 6px;
         }
       }
+    }
+  }
+}
+/* ThankYou Section.
+* --------------------------------------- */
+#fullpage .section.thankyou {
+  background-image: url("../img/thankyou_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .content_wrap {
+    position: relative;
+  }
+
+  .title {
+    position: absolute;
+    top: 70px;
+    font-weight: 800;
+    font-size: 55px;
+    margin-bottom: 90px;
+
+    span.highlight {
+      font-size: 65px;
+    }
+  }
+
+  .info {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    text-align: right;
+
+    ul li {
+      font-size: 14px;
+      margin-bottom: 6px;
+      font-weight: 900;
     }
   }
 }
