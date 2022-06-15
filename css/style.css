@@ -1,26 +1,149 @@
+@charset "UTF-8";
 @import "reset.css";
-
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@keyframes test-animation {
+  from {
+    transform: translate(0, 30px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes dot-animation {
+  from {
+    transform: translate(100px, 0px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+/* Common */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #545f72;
+}
+body .highlight {
+  color: #466dfd;
+}
 
 /* Overwriting styles for navigation bullets
 * --------------------------------------- */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    opacity: 0.5;
+  opacity: 0.5;
 }
-
 
 /* Fixed header.
 * --------------------------------------- */
 #header {
-    top: 0px;
-    position: fixed;
-    height: 50px;
-    display: block;
-    width: 100%;
-    background: #333;
-    z-index: 9;
-    text-align: center;
-    color: #f2f2f2;
-    padding: 20px 0 0 0;
+  top: 0px;
+  position: fixed;
+  height: 50px;
+  display: block;
+  width: 100%;
+  background: #333;
+  z-index: 9;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
 }
+
+/* fullpage.
+* --------------------------------------- */
+#fullpage .content_wrap {
+  margin: 0 auto;
+  width: 1300px;
+  height: 100%;
+}
+
+/* Home Section.
+* --------------------------------------- */
+#fullpage .section.home {
+  background-image: url("../img/home_background_test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#fullpage .section.home .content_wrap {
+  position: relative;
+}
+#fullpage .section.home .dot-img {
+  position: absolute;
+  right: 65px;
+  top: -30px;
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/dot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* 애니메이션 적용 */
+  animation: dot-animation 0.7s linear;
+  animation-duration: 700ms;
+  transition-duration: 1s;
+}
+#fullpage .section.home .title-area {
+  position: absolute;
+  top: 70px;
+  /* 애니메이션 적용 */
+  animation: test-animation 0.1s linear;
+  animation-duration: 700ms;
+}
+#fullpage .section.home .title-area .sub-title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#fullpage .section.home .title-area .title {
+  font-weight: 800;
+  font-size: 80px;
+  margin-bottom: 90px;
+}
+#fullpage .section.home .title-area .title span.highlight {
+  font-size: 90px;
+}
+#fullpage .section.home .title-area .description {
+  font-weight: 500;
+  font-size: 20px;
+}
+#fullpage .section.home .title-area .description p {
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 1px solid;
+}
+#fullpage .section.home .title-area .description p span.bold {
+  font-weight: 900;
+}
+#fullpage .section.home .title-area .description p span.highlight {
+  font-size: 30px;
+}
+#fullpage .section.home .bottom-area {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 40px;
+}
+#fullpage .section.home .bottom-area .copyright {
+  font-weight: 500;
+  font-size: 12px;
+}
+#fullpage .section.home .bottom-area .info {
+  display: flex;
+}
+#fullpage .section.home .bottom-area .info .item {
+  text-align: right;
+  margin-left: 20px;
+}
+#fullpage .section.home .bottom-area .info .item .title {
+  color: #466dfd;
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+#fullpage .section.home .bottom-area .info .item ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

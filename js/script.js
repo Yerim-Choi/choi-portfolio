@@ -15,7 +15,7 @@ new fullpage("#fullpage", {
   //이동
   menu: "#menu",
   lockAnchors: false,
-  anchors: ["firstPage", "secondPage"],
+  anchors: ["home", "intro", "experience", "project", "more", "thankyou"],
   navigation: true,
   navigationPosition: "right",
   //   navigationTooltips: ["firstSlide", "secondSlide"],
@@ -58,14 +58,14 @@ new fullpage("#fullpage", {
   //디자인
   controlArrows: true,
   verticalCentered: true,
-  sectionsColor: [
-    "#DEE8F9",
-    "#F7F7F9",
-    "#E8ECF3",
-    "#FFFFFF",
-    "#F7F7F7",
-    "#ECF1F4",
-  ],
+  //   sectionsColor: [
+  //     "#DEE8F9",
+  //     "#F7F7F9",
+  //     "#E8ECF3",
+  //     "#FFFFFF",
+  //     "#F7F7F7",
+  //     "#ECF1F4",
+  //   ],
   paddingTop: "3em",
   paddingBottom: "10px",
   fixedElements: "#header, .footer",
