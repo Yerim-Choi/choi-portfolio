@@ -1,1 +1,26 @@
 @import "reset.css";
+
+
+
+/* Overwriting styles for navigation bullets
+* --------------------------------------- */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    opacity: 0.5;
+}
+
+
+/* Fixed header.
+* --------------------------------------- */
+#header {
+    top: 0px;
+    position: fixed;
+    height: 50px;
+    display: block;
+    width: 100%;
+    background: #333;
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+}
