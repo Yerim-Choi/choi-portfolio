@@ -27,6 +27,26 @@ body {
   .highlight {
     color: #466dfd;
   }
+
+  .bold {
+    font-weight: 500;
+  }
+
+  .header-title {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    color: #cecece;
+    font-weight: 700;
+  }
+
+  .page-count {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    color: #cecece;
+    font-weight: 700;
+  }
 }
 
 /* Overwriting styles for navigation bullets
@@ -159,22 +179,6 @@ body {
   background-position: center center;
   position: relative;
 
-  .header {
-    position: absolute;
-    top: 50px;
-    left: 80px;
-    color: #cecece;
-    font-weight: 700;
-  }
-
-  .page-count {
-    position: absolute;
-    bottom: 50px;
-    left: 80px;
-    color: #cecece;
-    font-weight: 700;
-  }
-
   .content_wrap {
     position: relative;
 
@@ -240,6 +244,126 @@ body {
             font-weight: 400;
             margin-top: 10px;
             color: #c6c6c6;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Experience Section.
+* --------------------------------------- */
+#fullpage .section.experience {
+  background-image: url("../img/experience_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .content_wrap {
+    // position: relative;
+  }
+
+  .slider-wrap {
+    position: relative;
+    margin-top: 170px;
+    // button
+    .slick-arrow {
+      top: 60%;
+      z-index: 1;
+      position: absolute;
+      width: 75px;
+      height: 30px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      cursor: pointer;
+      border: none;
+
+      &.slick-prev {
+        background-image: url("../img/prev.png");
+      }
+      &.slick-next {
+        right: 0;
+        background-image: url("../img/next.png");
+      }
+    }
+
+    .slide-item {
+      display: flex;
+      .row {
+        &.row-left {
+          width: 400px;
+          font-weight: 900;
+          .num {
+            font-size: 50px;
+            color: #d1d8df;
+          }
+          .name {
+            font-size: 32px;
+            margin-top: 15px;
+          }
+          .job {
+            font-size: 17px;
+            margin-top: 20px;
+          }
+          .date {
+            font-weight: 500;
+            font-size: 17px;
+            margin-top: 8px;
+          }
+        }
+
+        &.row-right {
+          .title {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 35px;
+            // 형광펜 효과
+            background: linear-gradient(to top, #c7ccd3 50%, transparent 50%);
+          }
+          .date {
+            font-size: 17px;
+            color: #b1b5ba;
+            margin-top: 10px;
+          }
+
+          .skill-list {
+            margin-top: 30px;
+            margin-bottom: 60px;
+            ul {
+              display: flex;
+              flex-wrap: wrap;
+              width: 400px;
+              li {
+                font-weight: 700;
+                font-size: 14px;
+                padding: 5px 15px;
+                background-color: #ced4de;
+                border-radius: 20px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+
+          .column-item {
+            display: flex;
+            margin-bottom: 90px;
+
+            .sub-title {
+              width: 160px;
+              font-weight: 900;
+              font-size: 18px;
+              color: #466dfd;
+            }
+            .text {
+              font-weight: 300;
+              width: 500px;
+              p {
+                line-height: 23px;
+              }
+            }
           }
         }
       }

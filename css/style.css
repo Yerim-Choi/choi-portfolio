@@ -25,6 +25,23 @@ body {
 body .highlight {
   color: #466dfd;
 }
+body .bold {
+  font-weight: 500;
+}
+body .header-title {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  color: #cecece;
+  font-weight: 700;
+}
+body .page-count {
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+  color: #cecece;
+  font-weight: 700;
+}
 
 /* Overwriting styles for navigation bullets
 * --------------------------------------- */
@@ -140,20 +157,6 @@ body .highlight {
   background-position: center center;
   position: relative;
 }
-#fullpage .section.intro .header {
-  position: absolute;
-  top: 50px;
-  left: 80px;
-  color: #cecece;
-  font-weight: 700;
-}
-#fullpage .section.intro .page-count {
-  position: absolute;
-  bottom: 50px;
-  left: 80px;
-  color: #cecece;
-  font-weight: 700;
-}
 #fullpage .section.intro .content_wrap {
   position: relative;
 }
@@ -214,6 +217,109 @@ body .highlight {
   font-weight: 400;
   margin-top: 10px;
   color: #c6c6c6;
+}
+
+/* Experience Section.
+* --------------------------------------- */
+#fullpage .section.experience {
+  background-image: url("../img/experience_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#fullpage .section.experience .slider-wrap {
+  position: relative;
+  margin-top: 170px;
+}
+#fullpage .section.experience .slider-wrap .slick-arrow {
+  top: 60%;
+  z-index: 1;
+  position: absolute;
+  width: 75px;
+  height: 30px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  border: none;
+}
+#fullpage .section.experience .slider-wrap .slick-arrow.slick-prev {
+  background-image: url("../img/prev.png");
+}
+#fullpage .section.experience .slider-wrap .slick-arrow.slick-next {
+  right: 0;
+  background-image: url("../img/next.png");
+}
+#fullpage .section.experience .slider-wrap .slide-item {
+  display: flex;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-left {
+  width: 400px;
+  font-weight: 900;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-left .num {
+  font-size: 50px;
+  color: #d1d8df;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-left .name {
+  font-size: 32px;
+  margin-top: 15px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-left .job {
+  font-size: 17px;
+  margin-top: 20px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-left .date {
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 8px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 35px;
+  background: linear-gradient(to top, #c7ccd3 50%, transparent 50%);
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .date {
+  font-size: 17px;
+  color: #b1b5ba;
+  margin-top: 10px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .skill-list {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .skill-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .skill-list ul li {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5px 15px;
+  background-color: #ced4de;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .column-item {
+  display: flex;
+  margin-bottom: 90px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .column-item .sub-title {
+  width: 160px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #466dfd;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .column-item .text {
+  font-weight: 300;
+  width: 500px;
+}
+#fullpage .section.experience .slider-wrap .slide-item .row.row-right .column-item .text p {
+  line-height: 23px;
 }
 
 /* ThankYou Section.
