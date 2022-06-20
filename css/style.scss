@@ -67,6 +67,7 @@ button {
   .content_wrap {
     margin: 0 auto;
     width: 1200px;
+    min-width: 1200px;
     height: 100%;
   }
 }
@@ -267,13 +268,19 @@ button {
   background-position: center center;
 
   .content_wrap {
-    // position: relative;
+    position: relative;
+    height: 100%;
+  }
+
+  .position-wrap {
+    position: absolute;
+    top: 90px;
+    width: 100%;
   }
 
   .slider-wrap {
     position: relative;
-    // TODO 높이 수정
-    margin-top: 170px;
+
     // button
     .slick-arrow {
       top: 40%;
@@ -411,10 +418,17 @@ button {
   background-position: center center;
 
   .content_wrap {
+    position: relative;
+    height: 100%;
+  }
+
+  .position-wrap {
+    position: absolute;
+    top: 90px;
+    width: 100%;
   }
   .row-warp {
-    // TODO 높이 수정
-    margin-top: 170px;
+    position: relative;
   }
 
   .slick-arrow {
@@ -465,13 +479,14 @@ button {
   .slide-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .row {
     &.row-flex {
       flex-direction: column;
       justify-content: space-between;
-      width: 800px;
+      width: 750px;
     }
     .title {
       .main-title {
@@ -489,8 +504,10 @@ button {
 
       .view-button {
         display: flex;
-        margin-top: 60px;
-        margin-bottom: 130px;
+        // margin-top: 60px;
+        margin-top: 4%;
+        // margin-bottom: 130px;
+        margin-bottom: 7%;
         button {
           display: flex;
           align-items: center;
@@ -545,6 +562,7 @@ button {
 
   .content_wrap {
     position: relative;
+    height: 100%;
     // margin-top: 100px;
     // width: 100%;
   }

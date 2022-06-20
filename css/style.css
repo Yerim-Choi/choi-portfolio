@@ -62,6 +62,7 @@ button .page-count {
 #fullpage .content_wrap {
   margin: 0 auto;
   width: 1200px;
+  min-width: 1200px;
   height: 100%;
 }
 
@@ -235,9 +236,17 @@ button .page-count {
   background-size: cover;
   background-position: center center;
 }
+#fullpage .section.experience .content_wrap {
+  position: relative;
+  height: 100%;
+}
+#fullpage .section.experience .position-wrap {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+}
 #fullpage .section.experience .slider-wrap {
   position: relative;
-  margin-top: 170px;
 }
 #fullpage .section.experience .slider-wrap .slick-arrow {
   top: 40%;
@@ -352,8 +361,17 @@ button .page-count {
   background-size: cover;
   background-position: center center;
 }
+#fullpage .section.project .content_wrap {
+  position: relative;
+  height: 100%;
+}
+#fullpage .section.project .position-wrap {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+}
 #fullpage .section.project .row-warp {
-  margin-top: 170px;
+  position: relative;
 }
 #fullpage .section.project .slick-arrow {
   top: 3%;
@@ -398,11 +416,12 @@ button .page-count {
 #fullpage .section.project .slide-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 #fullpage .section.project .row.row-flex {
   flex-direction: column;
   justify-content: space-between;
-  width: 800px;
+  width: 750px;
 }
 #fullpage .section.project .row .title .main-title {
   font-size: 60px;
@@ -418,8 +437,8 @@ button .page-count {
 }
 #fullpage .section.project .row .title .view-button {
   display: flex;
-  margin-top: 60px;
-  margin-bottom: 130px;
+  margin-top: 4%;
+  margin-bottom: 7%;
 }
 #fullpage .section.project .row .title .view-button button {
   display: flex;
@@ -467,6 +486,7 @@ button .page-count {
 }
 #fullpage .section.more .content_wrap {
   position: relative;
+  height: 100%;
 }
 #fullpage .section.more .main-title {
   position: absolute;
