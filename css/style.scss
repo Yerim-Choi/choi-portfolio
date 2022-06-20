@@ -25,7 +25,7 @@
 /* Common */
 /* --------------------------------------- */
 body {
-  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  font-family: Pretendard, "Noto Sans KR", sans-serif !important;
   color: #545f72;
 
   .highlight {
@@ -272,7 +272,7 @@ body {
     margin-top: 170px;
     // button
     .slick-arrow {
-      top: 60%;
+      top: 40%;
       z-index: 1;
       position: absolute;
       width: 75px;
@@ -284,12 +284,35 @@ body {
       cursor: pointer;
       border: none;
 
+      &:hover {
+        // background-color: #545f72;
+        // border-radius: 10%;
+        // transition: all 0.3s;
+      }
+
       &.slick-prev {
+        left: 0px;
         background-image: url("../img/prev.png");
       }
       &.slick-next {
-        right: 0;
+        left: 140px;
         background-image: url("../img/next.png");
+      }
+    }
+
+    // paging
+    .slick-dots {
+      position: absolute;
+      top: 41%;
+      left: 90px;
+      font-size: 16px;
+      color: #b1b5ba;
+
+      li {
+        display: none;
+        &.slick-active {
+          display: block;
+        }
       }
     }
 

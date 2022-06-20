@@ -21,7 +21,7 @@
 /* Common */
 /* --------------------------------------- */
 body {
-  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  font-family: Pretendard, "Noto Sans KR", sans-serif !important;
   color: #545f72;
 }
 body .highlight {
@@ -234,7 +234,7 @@ body .page-count {
   margin-top: 170px;
 }
 #fullpage .section.experience .slider-wrap .slick-arrow {
-  top: 60%;
+  top: 40%;
   z-index: 1;
   position: absolute;
   width: 75px;
@@ -247,11 +247,25 @@ body .page-count {
   border: none;
 }
 #fullpage .section.experience .slider-wrap .slick-arrow.slick-prev {
+  left: 0px;
   background-image: url("../img/prev.png");
 }
 #fullpage .section.experience .slider-wrap .slick-arrow.slick-next {
-  right: 0;
+  left: 140px;
   background-image: url("../img/next.png");
+}
+#fullpage .section.experience .slider-wrap .slick-dots {
+  position: absolute;
+  top: 41%;
+  left: 90px;
+  font-size: 16px;
+  color: #b1b5ba;
+}
+#fullpage .section.experience .slider-wrap .slick-dots li {
+  display: none;
+}
+#fullpage .section.experience .slider-wrap .slick-dots li.slick-active {
+  display: block;
 }
 #fullpage .section.experience .slider-wrap .slide-item {
   display: flex;
