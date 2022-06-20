@@ -20,24 +20,29 @@
 }
 /* Common */
 /* --------------------------------------- */
-body {
+body,
+button {
   font-family: Pretendard, "Noto Sans KR", sans-serif !important;
   color: #545f72;
 }
-body .highlight {
+body .highlight,
+button .highlight {
   color: #466dfd;
 }
-body .bold {
+body .bold,
+button .bold {
   font-weight: 500;
 }
-body .header-title {
+body .header-title,
+button .header-title {
   position: absolute;
   top: 50px;
   left: 80px;
   color: #cecece;
   font-weight: 700;
 }
-body .page-count {
+body .page-count,
+button .page-count {
   position: absolute;
   bottom: 50px;
   left: 80px;
@@ -213,11 +218,12 @@ body .page-count {
 #fullpage .section.intro .content_wrap .column .column-item .content {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 #fullpage .section.intro .content_wrap .column .column-item .content .date {
   font-weight: 400;
   margin-top: 10px;
+  margin-top: 3%;
   color: #c6c6c6;
 }
 
@@ -288,7 +294,7 @@ body .page-count {
 }
 #fullpage .section.experience .slider-wrap .slide-item .row.row-left .date {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
   margin-top: 8px;
 }
 #fullpage .section.experience .slider-wrap .slide-item .row.row-right .title {
@@ -336,6 +342,119 @@ body .page-count {
 }
 #fullpage .section.experience .slider-wrap .slide-item .row.row-right .column-item .text p {
   line-height: 23px;
+}
+
+/* Project Section.
+* --------------------------------------- */
+#fullpage .section.project {
+  background-image: url("../img/project_background_test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#fullpage .section.project .row-warp {
+  margin-top: 170px;
+}
+#fullpage .section.project .slick-arrow {
+  top: 3%;
+  right: 50%;
+  z-index: 1;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  border: none;
+}
+#fullpage .section.project .slick-arrow.project-slick-prev {
+  left: 47%;
+  background-image: url("../img/arrow_gray.png");
+}
+#fullpage .section.project .slick-arrow.project-slick-next {
+  left: 55%;
+  background-image: url("../img/arrow_gray.png");
+  transform: rotate(180deg);
+}
+#fullpage .section.project .slick-dots {
+  position: absolute;
+  top: 3.5%;
+  left: 49.5%;
+  font-size: 16px;
+  color: #545f72;
+  font-weight: 500;
+}
+#fullpage .section.project .slick-dots li {
+  display: none;
+}
+#fullpage .section.project .slick-dots li.slick-active {
+  display: inline-block;
+}
+#fullpage .section.project .slick-dots li.slick-active span.color {
+  color: #d6d6d6;
+}
+#fullpage .section.project .slide-item {
+  display: flex;
+  align-items: center;
+}
+#fullpage .section.project .row.row-flex {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 800px;
+}
+#fullpage .section.project .row .title .main-title {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+}
+#fullpage .section.project .row .title .main-title .sub-title {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #466dfd;
+  font-weight: 700;
+  line-height: normal;
+}
+#fullpage .section.project .row .title .view-button {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 130px;
+}
+#fullpage .section.project .row .title .view-button button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 170px;
+  padding: 0 25px;
+  height: 35px;
+  border: 1px solid #545f72;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+  color: #545f72;
+  transition: all 0.3s;
+}
+#fullpage .section.project .row .title .view-button button:hover {
+  background-color: #f5f5f5;
+}
+#fullpage .section.project .row .detail .item {
+  margin-bottom: 20px;
+}
+#fullpage .section.project .row .detail .item:last-child {
+  margin-top: 50px;
+}
+#fullpage .section.project .row .detail .item .title {
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+#fullpage .section.project .row .detail .item .text {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #c6c6c6;
 }
 
 /* More Section.
