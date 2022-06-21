@@ -621,4 +621,26 @@ button .page-count {
   font-weight: 900;
 }
 
+@media screen and (max-width: 1600px) {
+  #fullpage .section.more .main-title {
+    bottom: 70px;
+  }
+  #fullpage .section.more .view-item {
+    height: 220px !important;
+  }
+  #fullpage .section.more .view-item .img.puzzle {
+    top: -45% !important;
+  }
+  #fullpage .section.more .view-item .img.rocket {
+    top: 0 !important;
+    left: -85% !important;
+  }
+  #fullpage .section.more .view-item .img.pencil {
+    left: -35% !important;
+  }
+  #fullpage .section.more .view-item .img.phone {
+    top: 55% !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

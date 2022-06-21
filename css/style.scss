@@ -597,6 +597,7 @@ button {
     .view-item {
       position: relative;
       width: 350px;
+      // TODO height
       height: 310px;
       margin-left: 90px;
       margin-bottom: 60px;
@@ -733,6 +734,36 @@ button {
       font-size: 14px;
       margin-bottom: 6px;
       font-weight: 900;
+    }
+  }
+}
+
+// media
+@media screen and (max-width: 1600px) {
+  #fullpage .section.more {
+    .main-title {
+      bottom: 70px;
+    }
+    .view-item {
+      height: 220px !important;
+      .img {
+        &.puzzle {
+          top: -45% !important;
+        }
+
+        &.rocket {
+          top: 0 !important;
+          left: -85% !important;
+        }
+
+        &.pencil {
+          left: -35% !important;
+        }
+
+        &.phone {
+          top: 55% !important;
+        }
+      }
     }
   }
 }
