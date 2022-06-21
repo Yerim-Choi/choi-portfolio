@@ -274,13 +274,17 @@ button .page-count {
   top: 41%;
   left: 90px;
   font-size: 16px;
-  color: #b1b5ba;
+  color: #545f72;
+  font-weight: 500;
 }
 #fullpage .section.experience .slider-wrap .slick-dots li {
   display: none;
 }
 #fullpage .section.experience .slider-wrap .slick-dots li.slick-active {
-  display: block;
+  display: inline-block;
+}
+#fullpage .section.experience .slider-wrap .slick-dots li.slick-active span.color {
+  color: #b1b5ba;
 }
 #fullpage .section.experience .slider-wrap .slide-item {
   display: flex;

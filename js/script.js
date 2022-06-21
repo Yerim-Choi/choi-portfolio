@@ -101,7 +101,7 @@ $(document).ready(function () {
       nextArrow: "<button type='button' class='slick-next'></button>",
       draggable: true, //드래그 가능 여부
       customPaging: function (slider, i) {
-        return `${i + 1} / ${slider.slideCount}`;
+        return `${i + 1}<span class="color" > / ${slider.slideCount}</span>`;
       },
       responsive: [
         // 반응형 웹 구현 옵션

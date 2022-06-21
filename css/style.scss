@@ -317,12 +317,16 @@ button {
       top: 41%;
       left: 90px;
       font-size: 16px;
-      color: #b1b5ba;
+      color: #545f72;
+      font-weight: 500;
 
       li {
         display: none;
         &.slick-active {
-          display: block;
+          display: inline-block;
+          span.color {
+            color: #b1b5ba;
+          }
         }
       }
     }
