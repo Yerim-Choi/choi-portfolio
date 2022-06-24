@@ -4,8 +4,9 @@
 // Pretendard
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
-@keyframes test-animation {
+@keyframes move-up-animation {
   from {
+    opacity: 0;
     transform: translate(0, 30px);
   }
   to {
@@ -13,8 +14,9 @@
   }
 }
 
-@keyframes dot-animation {
+@keyframes dot-img-animation {
   from {
+    opacity: 0;
     transform: translate(100px, 0px);
   }
   to {
@@ -94,17 +96,17 @@ button {
     background-repeat: no-repeat;
     background-size: contain;
     /* 애니메이션 적용 */
-    animation: dot-animation 0.7s linear;
-    animation-duration: 700ms;
-    transition-duration: 1s;
+    animation: dot-img-animation 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 500ms;
   }
 
   .title-area {
     position: absolute;
     top: 70px;
     /* 애니메이션 적용 */
-    animation: test-animation 0.1s linear;
-    animation-duration: 700ms;
+    // animation: move-up-animation 0.1s linear;
+    animation: move-up-animation 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 500ms;
 
     .sub-title {
       font-weight: 500;
@@ -722,6 +724,11 @@ button {
     font-weight: 900;
     font-size: 55px;
     margin-bottom: 90px;
+    /* 애니메이션 적용 */
+    // animation: move-up-animation 0.1s linear;
+    // animation-duration: 700ms;
+    animation: move-up-animation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 500ms;
 
     span.highlight {
       font-size: 65px;
