@@ -569,6 +569,7 @@ button .page-count {
   line-height: 1.3;
 }
 #fullpage .section.more .view-wrap .view-item .view-blog {
+  z-index: 1;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -585,10 +586,12 @@ button .page-count {
   right: 0;
   bottom: 10px;
   font-weight: 300;
+  font-weight: bold;
   color: #c6c6c6;
   font-size: 15px;
 }
 #fullpage .section.more .view-wrap .view-item .view-blog :hover {
+  font-weight: bold;
   color: #545f72;
   transition: all 0.3s;
 }

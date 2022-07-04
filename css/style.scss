@@ -678,6 +678,7 @@ button {
       }
 
       .view-blog {
+        z-index: 1;
         position: absolute;
         right: 0;
         bottom: 0;
@@ -693,11 +694,12 @@ button {
           right: 0;
           bottom: 10px;
           font-weight: 300;
+          font-weight: bold;
           color: #c6c6c6;
           font-size: 15px;
         }
-
         :hover {
+          font-weight: bold;
           color: #545f72;
           transition: all 0.3s;
         }
