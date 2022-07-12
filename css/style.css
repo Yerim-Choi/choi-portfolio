@@ -71,7 +71,7 @@ button .page-count {
 /* Home Section.
 * --------------------------------------- */
 #fullpage .section.home {
-  background-image: url("../img/home_background_test.png");
+  background-image: url("../img/home_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -361,7 +361,7 @@ button .page-count {
 /* Project Section.
 * --------------------------------------- */
 #fullpage .section.project {
-  background-image: url("../img/project_background_test.png");
+  background-image: url("../img/project_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
