@@ -1,5 +1,7 @@
 // 모든 옵션이 들어간 바닐라 JS 예시
 $(document).ready(function () {
+  $(".loading-page").css("display", "none");
+
   $("#fullpage").fullpage({
     //이동
     menu: "#menu",
